@@ -1,0 +1,409 @@
+/*****************************************************
+COLORS
+
+Red: #BF211E
+Charcol: #252627;
+Light gray: #D3D4D9;
+
+
+*****************************************************/
+
+/*****************************************************
+UNIVERSAL
+*****************************************************/
+
+* {
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Pacifico', cursive;
+	color: #BF211E;
+}
+
+h3, a {
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Arimo', sans-serif;
+	color: #252627;
+}
+
+a {
+	color: #252627;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #BF211E;
+}
+
+/*****************************************************
+BODY TEXT
+*****************************************************/
+
+
+p, h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+
+p {
+	font-size: 1.125em;
+	width: 92%;
+	margin: 30px auto;
+	line-height: 25px;
+}
+.hero p {
+	margin-top: 0;
+}
+/*****************************************************
+MAIN-NAV
+*****************************************************/
+
+ul li {
+	padding: 10px;
+	text-align: center;
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+ul {
+	padding: 0;
+	width: 92%;
+	margin: 0 auto;
+}
+
+div.main-nav {
+	background-color: #D3D4D9;
+	padding: 25px 0;
+}
+
+div.main-nav h1 {
+	margin-top: 0;
+}
+
+/*****************************************************
+PORTFOLIO
+*****************************************************/
+
+div.portfolio h3 {
+
+	padding: 25px 0;
+
+}
+
+/*****************************************************
+CONTACT
+*****************************************************/
+
+.bold {
+	font-weight: bold;
+}
+.contact {
+	background-color: #D3D4D9;
+	padding: 50px 0;
+}
+
+p.contact-info, .contact h3{
+	margin-bottom: 0;
+}
+
+p.contact-info {
+	margin-top: 15px;
+}
+
+.contact h3 {
+	margin-top: 0;
+}
+
+/*****************************************************
+IMAGES
+*****************************************************/
+
+img {
+	width: 92%;
+	margin: 0 4%;
+}
+
+img.img-me {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	margin: 12.5px 75px;
+ }
+
+ div.hero-img {
+ 	background-color: #ffffff;
+ 	width: 280px;
+ 	height: 155px;
+ 	margin: 50px 60px;
+ }
+
+/*****************************************************
+FOOTER
+*****************************************************/
+.footer-nav {
+	display: none;
+}
+
+footer {
+	border-top: 1px solid gray;
+	padding: 25px 0;
+	background-color: #D3D4D9;
+}
+
+p.footer-right-col, p.footer-left-col {
+	display: inline;
+	font-weight: bold;
+	font-size: .8em;
+}
+
+footer a {
+	font-size: .8em;
+}
+
+p.footer-left-col {
+	text-align: left;
+	margin-left: 6.25%;
+}
+
+p.footer-right-col {
+	text-align: right;
+	display: inline;
+	margin-left: 40.5%;
+}
+
+/*****************************************************
+MEDIA QUERIES
+*****************************************************/
+
+@media screen and (min-width: 768px) {
+
+/*****************************************************
+NAV
+*****************************************************/
+
+ul li {
+	display: inline-block;		
+	background: none;
+}
+
+ul {
+	width: 100%;
+	display: inline-block;		
+	text-align: center;
+}
+
+/*****************************************************
+HERO
+*****************************************************/
+
+ div.hero p {
+	float: left;
+	text-align: left;
+	margin-left: 70px;
+}
+
+div.hero-img {
+	float: right;
+	margin: 0;
+	position: relative;
+	right: 70px;
+}
+
+ div.hero p, div.hero-img {
+ 	margin-top: 25px;
+ 	display: inline;
+ 	width: 45%;
+}
+
+div.hero-img {
+	width: 36%;
+	background-color: #FFFFFF;
+}
+
+ .clearfix {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+ }
+
+/*****************************************************
+PORTFOLIO
+*****************************************************/
+
+div.left, div.right {
+	width: 45%;
+	margin: 0 19px;
+
+} 
+div.left {
+ 	float: left;
+} 
+
+div.right {
+ 	float: right;
+}
+ 
+/*****************************************************
+CONTACT
+*****************************************************/
+
+p.contact-para {
+	width: 75%;
+	margin: 35px auto;
+}
+
+p.contact-info {
+	margin-top: 5px;
+}
+
+/*****************************************************
+FOOTER
+*****************************************************/
+
+p.footer-left-col {
+	margin-left: 25px;
+}
+
+ul.footer-nav {
+ 	margin-left: 100px;
+ }
+
+.footer-right-col a {
+	display: none;
+}
+
+ul.footer-nav, .footer-left-col {
+	display: inline;
+}
+
+ul.footer-nav li a, p.footer-left-col {
+	font-size: .7em;
+	font-weight: bold;
+}
+
+footer {
+	padding-top: 0;
+}
+
+/*****************************************************
+DESKTOP
+*****************************************************/
+
+@media screen and (min-width: 940px) {
+
+body {
+	width: 85%;
+	margin: 0 auto;
+}
+
+footer, div.contact, div.main-nav {
+	background-color: #ffffff;
+}
+
+h3, h2 {
+	font-size: 1.5em;
+}
+
+/*****************************************************
+NAV
+*****************************************************/
+
+h1 {
+	text-align: left;
+	margin-left: 70px;
+	display: inline-block;
+}
+
+div.main-nav ul {
+	display: inline;
+	margin-left: 585px;
+}
+
+/*****************************************************
+HERO
+*****************************************************/
+
+ div.hero.clearfix p {
+	width: 45%;
+	font-size: 1.5em;
+ }
+
+div.hero-img {
+	float: right;
+	margin: 0;
+	position: relative;
+	right: 33px;
+  }
+
+ div.hero p, div.hero-img {
+ 	margin-top: 25px;
+ 	display: inline;
+ 	width: 45%;
+ }
+div.hero-img {
+	width: 480px;
+	height:280px;
+	background-color: #D3D4D9;
+}
+
+img.img-me {
+	width: 250px;
+	height: 250px;
+	margin: 15px 115px;
+}
+
+/*****************************************************
+PORTFOLIO
+*****************************************************/
+
+div.left, div.right {
+	width: 30%;
+	margin: 0 19px;
+
+} 
+div.left {
+ 	float: left;
+} 
+
+div.right {
+ 	float: right;
+}
+
+/*****************************************************
+CONTACT
+*****************************************************/
+
+p.contact-para {
+	width: 40%;
+	margin: 35px auto;
+}
+
+/*****************************************************
+FOOTER
+*****************************************************/
+ 
+ul.footer-nav {
+ 	margin-left: 370px;
+ }
+
+.footer-right-col a {
+	display: none;
+}
+
+ul.footer-nav, .footer-left-col {
+	display: inline;
+}
+
+	
+}
+
+
+ 
