@@ -290,12 +290,16 @@ footer {
 	padding-top: 0;
 }
 
+}
 /*****************************************************
 DESKTOP
 *****************************************************/
 
 @media screen and (min-width: 1040px) {
 
+html, body { 
+	margin: 0px; padding: 0px; border: 0px; 
+}
 
 footer, div.contact, div.main-nav {
 	background-color: #ffffff;
@@ -311,7 +315,6 @@ NAV
 
 h1 {
 	text-align: left;
-	margin-left: 70px;
 	display: inline-block;
 }
 
@@ -324,26 +327,12 @@ div.main-nav ul {
 /*****************************************************
 HERO
 *****************************************************/
-
- div.hero.clearfix p {
-	width: 45%;
-	font-size: 1.5em;
- }
+div.hero p {
+	margin-left: 0;
+}
 
 div.hero-img {
-	float: right;
-	margin: 0;
-	position: relative;
-	right: 5%;
-  }
-
- div.hero p, div.hero-img {
- 	margin-top: 25px;
- 	display: inline;
- 	width: 45%;
- }
-div.hero-img {
-	width: 480px;
+	width: 420px;
 	height:280px;
 	background-color: #D3D4D9;
 }
@@ -351,29 +340,27 @@ div.hero-img {
 img.img-me {
 	width: 250px;
 	height: 250px;
-	margin: 15px 115px;
+	margin: 15px 85px;
 }
 
 /*****************************************************
 PORTFOLIO
 *****************************************************/
 
-div.left, div.right {
+.wrapper {
+	padding: 5px;
+	width: 1040px;
+	margin: 20px auto;
+}
+
+div.left, div.right, div.middle {
 	width: 29%;
 
 } 
-div.left {
+div.left, div.right, div.middle {
  	float: left;
 } 
 
-div.right {
- 	float: right;
-}
-
-div.port-piece {
-	height: 381px;
-	width: 301px;
-}
 
 /*****************************************************
 CONTACT
@@ -389,7 +376,7 @@ FOOTER
 *****************************************************/
  
 ul.footer-nav {
- 	margin-left: 370px;
+ 	margin-left: 250px;
  }
 
 .footer-right-col a {
@@ -400,6 +387,5 @@ ul.footer-nav, .footer-left-col {
 	display: inline;
 }
 
-	
 }
 
