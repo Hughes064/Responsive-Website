@@ -1,11 +1,8 @@
 /*****************************************************
 COLORS
-
 Red: #BF211E
 Charcol: #252627;
 Light gray: #D3D4D9;
-
-
 *****************************************************/
 
 /*****************************************************
@@ -297,12 +294,8 @@ footer {
 DESKTOP
 *****************************************************/
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 1040px) {
 
-body {
-	width: 85%;
-	margin: 0 auto;
-}
 
 footer, div.contact, div.main-nav {
 	background-color: #ffffff;
@@ -323,8 +316,9 @@ h1 {
 }
 
 div.main-nav ul {
-	display: inline;
-	margin-left: 585px;
+	display: inline-block;
+	text-align: right;
+	width: 70%; 
 }
 
 /*****************************************************
@@ -340,7 +334,7 @@ div.hero-img {
 	float: right;
 	margin: 0;
 	position: relative;
-	right: 33px;
+	right: 5%;
   }
 
  div.hero p, div.hero-img {
@@ -365,8 +359,7 @@ PORTFOLIO
 *****************************************************/
 
 div.left, div.right {
-	width: 30%;
-	margin: 0 19px;
+	width: 29%;
 
 } 
 div.left {
@@ -375,6 +368,11 @@ div.left {
 
 div.right {
  	float: right;
+}
+
+div.port-piece {
+	height: 381px;
+	width: 301px;
 }
 
 /*****************************************************
@@ -405,5 +403,3 @@ ul.footer-nav, .footer-left-col {
 	
 }
 
-
- 
